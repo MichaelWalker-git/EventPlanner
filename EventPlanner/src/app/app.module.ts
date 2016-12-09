@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CreateEventComponent } from './pages/create-event/create-event.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CreateEventComponent } from './pages/create-event/create-event.componen
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
